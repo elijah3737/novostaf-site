@@ -45,33 +45,33 @@
       <button class="blog-cat-btn">Юридическое</button>
     </div>
 
-    <div class="blog-featured">
-      <a class="blog-card" href="autsorsing-vs-shtatniy.html">
+    <div class="blog-featured" id="blog-featured">
+      <a class="blog-card" href="autsorsing-vs-shtatniy.html" data-cat="Управление персоналом">
         <div class="bc-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Аутсорсинг vs штатный" loading="lazy"></div>
         <div class="bc-body"><div class="bc-cat">Управление персоналом</div><h3>Аутсорсинг или штатный сотрудник: что выгоднее в 2025 году</h3><p>Сравниваем реальные затраты с учётом скрытых расходов на штатных сотрудников. Считаем на конкретных цифрах — когда аутсорсинг окупается уже в первый месяц.</p><div class="bc-meta"><span class="bc-date">18 мая 2025 · 7 мин чтения</span><span class="bc-link">Читать →</span></div></div>
       </a>
       <div style="display:flex;flex-direction:column;gap:22px">
-        <a class="blog-card" href="sezonnyy-pik.html">
+        <a class="blog-card" href="sezonnyy-pik.html" data-cat="Операции">
           <div class="bc-img" style="height:130px"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Сезонный пик" loading="lazy"></div>
           <div class="bc-body"><div class="bc-cat">Операции</div><h3>Сезонный пик: как не потерять выручку из-за нехватки рук</h3><div class="bc-meta"><span class="bc-date">10 мая 2025 · 5 мин</span><span class="bc-link">Читать →</span></div></div>
         </a>
-        <a class="blog-card" href="kak-vybrat-outsorsing.html">
+        <a class="blog-card" href="kak-vybrat-outsorsing.html" data-cat="Советы">
           <div class="bc-img" style="height:130px"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Как выбрать" loading="lazy"></div>
           <div class="bc-body"><div class="bc-cat">Советы</div><h3>7 критериев выбора компании аутсорсинга персонала</h3><div class="bc-meta"><span class="bc-date">3 мая 2025 · 6 мин</span><span class="bc-link">Читать →</span></div></div>
         </a>
       </div>
     </div>
 
-    <div class="blog-grid">
-      <a class="blog-card reveal" href="dogovor-autsorsinga.html">
+    <div class="blog-grid" id="blog-grid">
+      <a class="blog-card reveal" href="dogovor-autsorsinga.html" data-cat="Юридическое">
         <div class="bc-img"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80" alt="Договор аутсорсинга" loading="lazy"></div>
         <div class="bc-body"><div class="bc-cat">Юридическое</div><h3>Что должно быть в договоре на аутсорсинг персонала: чеклист</h3><p>Разбираем ключевые пункты, на которые нужно обратить внимание перед подписанием. Какие условия защищают вас, а какие — только исполнителя.</p><div class="bc-meta"><span class="bc-date">26 апреля 2025 · 8 мин</span><span class="bc-link">Читать →</span></div></div>
       </a>
-      <a class="blog-card reveal d1" href="autsorsing-vs-shtatniy.html">
+      <a class="blog-card reveal d1" href="autsorsing-vs-shtatniy.html" data-cat="Управление персоналом">
         <div class="bc-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Управление командой" loading="lazy"></div>
         <div class="bc-body"><div class="bc-cat">Управление персоналом</div><h3>Как управлять командой аутсорсинговых сотрудников: 5 правил</h3><p>Аутсорсинговый персонал — не «чужие» на объекте. Как выстроить коммуникацию и добиться результата.</p><div class="bc-meta"><span class="bc-date">19 апреля 2025 · 5 мин</span><span class="bc-link">Читать →</span></div></div>
       </a>
-      <a class="blog-card reveal d2" href="kak-vybrat-outsorsing.html">
+      <a class="blog-card reveal d2" href="kak-vybrat-outsorsing.html" data-cat="Операции">
         <div class="bc-img"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80" alt="Склад" loading="lazy"></div>
         <div class="bc-body"><div class="bc-cat">Операции</div><h3>Аутсорсинг склада: с чего начать и чего ожидать в первый месяц</h3><p>Практический гайд для тех, кто переходит от штатного персонала к аутсорсингу склада впервые.</p><div class="bc-meta"><span class="bc-date">12 апреля 2025 · 6 мин</span><span class="bc-link">Читать →</span></div></div>
       </a>
@@ -101,7 +101,25 @@
 <script>
 const hdr=document.getElementById('hdr');
 window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',window.scrollY>60));
-document.querySelectorAll('.blog-cat-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.blog-cat-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')})});
+const featured=document.getElementById('blog-featured');
+document.querySelectorAll('.blog-cat-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.blog-cat-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat=btn.textContent.trim();
+    if(cat==='Все статьи'){
+      featured.style.display='';
+      document.querySelectorAll('.blog-card').forEach(c=>{c.style.display='';c.style.opacity='';});
+    } else {
+      featured.style.display='none';
+      document.querySelectorAll('#blog-grid .blog-card').forEach(card=>{
+        const cardCat=card.querySelector('.bc-cat');
+        card.style.display=(cardCat&&cardCat.textContent.trim()===cat)?'':'none';
+        if(cardCat&&cardCat.textContent.trim()===cat){card.style.opacity='1';card.style.transform='none';}
+      });
+    }
+  });
+});
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
