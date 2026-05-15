@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блог НовоСтаф — советы по аутсорсингу персонала</title>
+<meta name="description" content="Полезные статьи об аутсорсинге линейного персонала: как выбрать компанию, подготовиться к сезонному пику, оформить договор.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+.blog-hero{background:var(--navy);padding:130px 0 60px}
+.blog-cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.blog-cat-btn{padding:8px 18px;border-radius:100px;font-size:14px;font-weight:500;border:1.5px solid var(--g200);color:var(--g600);cursor:pointer;transition:all .2s;background:#fff}
+.blog-cat-btn:hover,.blog-cat-btn.active{background:var(--orange);border-color:var(--orange);color:#fff}
+.blog-featured{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;margin-bottom:22px}
+.blog-featured .blog-card:first-child .bc-img{height:280px}
+.blog-featured .blog-card:first-child h3{font-size:1.3rem}
+@media(max-width:768px){.blog-featured{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <div class="hd">
+    <a href="../index.html"><div class="logo-name">Ново<span>Стаф</span></div><div class="logo-sub">аутсорсинг персонала · Великий Новгород</div></a>
+    <nav><a href="../index.html#services">Услуги</a><a href="../index.html#how">Как работаем</a><a href="../index.html#cases">Кейсы</a><a href="index.html" class="active">Блог</a><a href="../index.html#partners">Партнёрам</a><a href="../index.html#contact">Контакты</a></nav>
+    <a href="../index.html#contact" class="hd-cta">Оставить заявку</a>
+  </div>
+</header>
+
+<div class="blog-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="../index.html">Главная</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-cur">Блог</span></nav>
+    <h1 style="color:#fff;font-size:clamp(2rem,4vw,3rem);font-weight:900;margin-bottom:14px">Блог НовоСтаф</h1>
+    <p style="color:rgba(255,255,255,.6);font-size:1.05rem;max-width:520px">Разбираем вопросы аутсорсинга персонала, управления командой и оптимизации складских операций</p>
+  </div>
+</div>
+
+<section style="background:#fff">
+  <div class="container">
+    <div class="blog-cats">
+      <button class="blog-cat-btn active">Все статьи</button>
+      <button class="blog-cat-btn">Управление персоналом</button>
+      <button class="blog-cat-btn">Операции</button>
+      <button class="blog-cat-btn">Советы</button>
+      <button class="blog-cat-btn">Юридическое</button>
+    </div>
+
+    <div class="blog-featured">
+      <a class="blog-card" href="autsorsing-vs-shtatniy.html">
+        <div class="bc-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Аутсорсинг vs штатный" loading="lazy"></div>
+        <div class="bc-body"><div class="bc-cat">Управление персоналом</div><h3>Аутсорсинг или штатный сотрудник: что выгоднее в 2025 году</h3><p>Сравниваем реальные затраты с учётом скрытых расходов на штатных сотрудников. Считаем на конкретных цифрах — когда аутсорсинг окупается уже в первый месяц.</p><div class="bc-meta"><span class="bc-date">18 мая 2025 · 7 мин чтения</span><span class="bc-link">Читать →</span></div></div>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <a class="blog-card" href="sezonnyy-pik.html">
+          <div class="bc-img" style="height:130px"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Сезонный пик" loading="lazy"></div>
+          <div class="bc-body"><div class="bc-cat">Операции</div><h3>Сезонный пик: как не потерять выручку из-за нехватки рук</h3><div class="bc-meta"><span class="bc-date">10 мая 2025 · 5 мин</span><span class="bc-link">Читать →</span></div></div>
+        </a>
+        <a class="blog-card" href="kak-vybrat-outsorsing.html">
+          <div class="bc-img" style="height:130px"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Как выбрать" loading="lazy"></div>
+          <div class="bc-body"><div class="bc-cat">Советы</div><h3>7 критериев выбора компании аутсорсинга персонала</h3><div class="bc-meta"><span class="bc-date">3 мая 2025 · 6 мин</span><span class="bc-link">Читать →</span></div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="blog-grid">
+      <a class="blog-card reveal" href="dogovor-autsorsinga.html">
+        <div class="bc-img"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80" alt="Договор аутсорсинга" loading="lazy"></div>
+        <div class="bc-body"><div class="bc-cat">Юридическое</div><h3>Что должно быть в договоре на аутсорсинг персонала: чеклист</h3><p>Разбираем ключевые пункты, на которые нужно обратить внимание перед подписанием. Какие условия защищают вас, а какие — только исполнителя.</p><div class="bc-meta"><span class="bc-date">26 апреля 2025 · 8 мин</span><span class="bc-link">Читать →</span></div></div>
+      </a>
+      <a class="blog-card reveal d1" href="autsorsing-vs-shtatniy.html">
+        <div class="bc-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Управление командой" loading="lazy"></div>
+        <div class="bc-body"><div class="bc-cat">Управление персоналом</div><h3>Как управлять командой аутсорсинговых сотрудников: 5 правил</h3><p>Аутсорсинговый персонал — не «чужие» на объекте. Как выстроить коммуникацию и добиться результата.</p><div class="bc-meta"><span class="bc-date">19 апреля 2025 · 5 мин</span><span class="bc-link">Читать →</span></div></div>
+      </a>
+      <a class="blog-card reveal d2" href="kak-vybrat-outsorsing.html">
+        <div class="bc-img"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80" alt="Склад" loading="lazy"></div>
+        <div class="bc-body"><div class="bc-cat">Операции</div><h3>Аутсорсинг склада: с чего начать и чего ожидать в первый месяц</h3><p>Практический гайд для тех, кто переходит от штатного персонала к аутсорсингу склада впервые.</p><div class="bc-meta"><span class="bc-date">12 апреля 2025 · 6 мин</span><span class="bc-link">Читать →</span></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="container cta-inner">
+    <h2>Нужна консультация по аутсорсингу?</h2>
+    <p>Расскажем об условиях работы и рассчитаем стоимость под вашу задачу</p>
+    <a href="../index.html#contact" class="btn btn-orange">Оставить заявку →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="ft-inner">
+      <div><div class="ft-logo">Ново<span>Стаф</span></div><p class="ft-desc">Аутсорсинг линейного персонала в Великом Новгороде с 2017 года.</p><div class="ft-social"><a href="#">✈</a><a href="#">В</a></div></div>
+      <div class="ft-col"><h4>Услуги</h4><ul class="ft-links"><li><a href="../services/gruzchiki.html">Грузчики</a></li><li><a href="../services/komplektovshchiki.html">Комплектовщики</a></li><li><a href="../services/kladovshchiki.html">Кладовщики</a></li><li><a href="../services/raznorabochie.html">Разнорабочие</a></li></ul></div>
+      <div class="ft-col"><h4>Блог</h4><ul class="ft-links"><li><a href="autsorsing-vs-shtatniy.html">Аутсорсинг vs штатный</a></li><li><a href="sezonnyy-pik.html">Сезонный пик</a></li><li><a href="kak-vybrat-outsorsing.html">Как выбрать компанию</a></li><li><a href="dogovor-autsorsinga.html">Договор аутсорсинга</a></li></ul></div>
+      <div class="ft-col"><h4>Контакты</h4><ul class="ft-links"><li><a href="tel:+78162000000">+7 (816) 200-00-00</a></li><li><a href="mailto:info@novostaf.ru">info@novostaf.ru</a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span class="ft-copy">© 2025 НовоСтаф</span><span class="ft-copy">Разработка — Digital Office Agency</span></div>
+  </div>
+</footer>
+<script>
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',window.scrollY>60));
+document.querySelectorAll('.blog-cat-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.blog-cat-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active')})});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
